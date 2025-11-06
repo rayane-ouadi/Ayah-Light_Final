@@ -1,0 +1,161 @@
+@font-face {
+    font-family: quranfont;
+    src: url(src/Fonts/noorehira.ttf);
+}
+@font-face {
+    font-family: mainfont;
+    src: url(src/Fonts/IBMPlexSans.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: mainfont;
+}
+
+nav{
+    background-color: #003f1c;
+    width: 100%;
+    height: 66px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoCont{
+    text-align: center;
+    background-color: #003f1c;
+}
+
+.logoCont img{
+    width: 150px; height: 62px;
+}
+
+.main{
+    background-color: #003f1c;
+    border-bottom-left-radius: 50px; 
+    border-bottom-right-radius: 50px; 
+    height: 550px;
+    color: white;
+    text-align: center;
+}
+
+.main .textCont{
+    padding-top: 200px;
+    width: 80%;
+    margin: auto;
+}
+
+.main .textCont #welcome-ayah{
+    font-weight: lighter;
+}
+
+.main .textCont #welcome-ayah.hidewelcome{
+    font-weight: lighter;
+    display: none;
+}
+.main .btnGen{
+    padding-top: 20px;
+    transition: all 0.5s ease;
+    max-width: 600px;
+    position: absolute;
+    left: 565px;
+    bottom: 150px;
+}
+
+.main .btnGen .gen-btn{
+    width: 230px; height: 35px;
+    border-radius: 50px;
+    color: #003f1c;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.main .btnGen .gen-btn:hover{
+    border-radius: 50px;
+    color: white;
+    background-color: #003f1c;
+    border: white 3px solid;
+}
+
+.main .btnGen.move-down {
+    top: 1000px;
+}
+
+.main2 {
+    text-align: center;
+    height: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.main2 .textCont2{
+    height: 200px;
+    margin: auto;
+    width: 80%;
+}
+
+
+footer{
+    height: 50px;
+    background-color: #003f1c;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding: 1px;
+    font-size: smaller;
+}
+
+@media (max-width: 1024px) {
+    body{
+        width: 799px;
+        background-color: #003f1c;
+    }
+
+    nav{
+        height: 100px;
+    }
+
+    .logoCont img{
+    width: 220px;
+    height: 82px;}
+
+    .main{
+        height: 1290px;
+    }
+
+    .main .textCont{
+        transform: scale(1.8);
+        width: 50%;    
+        margin-top: 310px;}
+
+    .main .btnGen{
+        position: absolute;
+        left: 150px;
+        bottom: -660px;
+        transform: scale(1.2);
+    }
+
+    .main .btnGen .gen-btn{
+        width: 500px;
+        height: 55px;
+        font-size: larger;
+    }
+
+    .main2{
+    background-color: white;
+    padding-top: 130px;
+    padding-bottom: 260px;}
+
+    .main2 .textCont2{
+    width: 50%;
+    transform: scale(1.5);
+    }
+
+    footer{
+        padding: 0;
+        font-size: 20px;
+    }
+}
